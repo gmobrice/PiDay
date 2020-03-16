@@ -1,0 +1,123 @@
+html, body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #1e1e23;
+  font-family: 'Segoe UI Local', 'Segoe UI Web';
+  font-size: 54px;
+  color: white;
+}
+
+.container
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.flex_cont
+{
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex: 1;
+  padding: 20px;
+}
+
+.pi_number
+{
+  padding: 0 10px;
+  animation: animation 0.5s ease;
+}
+
+.pi_number:nth-child(1), .pi_number:nth-child(2)
+{
+  color: #ccc !important;
+}
+
+.pi_number:nth-child(7n+1) 
+{
+  color: #4c9ada;
+}
+
+.pi_number:nth-child(7n+2) 
+{
+  color: #fab90b;
+}
+
+.pi_number:nth-child(7n+3) 
+{
+  color: #e25563;
+}
+
+.pi_number:nth-child(7n+4) 
+{
+  color: #9fb439;
+}
+
+.pi_number:nth-child(7n+5) 
+{
+  color: #aa98ea;
+}
+
+.pi_number:nth-child(7n+6) 
+{
+  color: #df7f0d;
+}
+
+.pi_number:nth-child(7n) 
+{
+  color: #c93d93;
+}
+
+@keyframes animation 
+{
+  0% 
+  {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100%
+  {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+footer 
+{
+  display: flex;
+  font-size: 20px;
+  padding: 20px 30px;
+}
+
+.date 
+{
+  margin-left: auto;
+  letter-spacing: 40px;
+}
+
+@font-face {
+  font-family: 'Segoe UI Local';
+  src: local('Segoe UI');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Web';
+  src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
